@@ -1,8 +1,8 @@
 //your JS code here. If required.
 const submitbtn=document.getElementById("submit");
 const checkBox=document.getElementById("checkbox");
-const usernameInput=document.getElementByid("username");
-const passwordInput=document.getElementByid("password");	
+const usernameInput=document.getElementById("username");
+const passwordInput=document.getElementById("password");	
 const existingBtn=document.getElementById("existing");
 
 function checkSavedCredentials() {
@@ -31,7 +31,7 @@ submitbtn.addEventListener('click',function(e){
 	}
 	checkSavedCredentials();
 });
-existingBtn.addEventListener('click',function (){
+existingBtn.addEventListener('click',function () {
 	const savedUser=localStorage.getItem('username');
 	if(savedUser){
 		alert(`Logged in as ${savedUser}`);
