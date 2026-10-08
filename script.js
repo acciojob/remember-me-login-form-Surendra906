@@ -24,7 +24,7 @@ submitbtn.addEventListener('click',function(e){
 	alert(`Logged in as ${username}`);
 	if(checkBox.checked){
 		localStorage.setItem('username',username);
-		localStorage.setitem('password',password);
+		localStorage.setItem('password',password);
 	}else{
 		localStorage.removeItem('username');
 		localStorage.removeItem('password');
