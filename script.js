@@ -16,7 +16,7 @@ function checkSavedCredentials() {
 	}
 }
 
-submitbtn.addEventlistener('click',function(e){
+submitbtn.addEventListener('click',function(e){
 	e.preventDefault();
 	const username=usernameInput.value;
 	const password=passwordInput.value;
@@ -26,8 +26,8 @@ submitbtn.addEventlistener('click',function(e){
 		localStorage.setItem('username',username);
 		localStorage.setitem('password',password);
 	}else{
-		localStorage.removeitem('username');
-		localStorage.removeitem('password');
+		localStorage.removeItem('username');
+		localStorage.removeItem('password');
 	}
 	checkSavedCredentials();
 });
